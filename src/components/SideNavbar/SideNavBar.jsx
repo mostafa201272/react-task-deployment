@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 import navStyles from './sidenav.module.css';
 
 // Assets
-import logo from '../../assets/imgs/logo.png';
+import logo from '../../assets/imgs/logo.jfif';
 
 const SideNavBar = () => {
 

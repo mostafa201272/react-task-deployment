@@ -118,90 +118,141 @@ const CreateCustomer = () =>{
 
                         <div className={`${customerStyles['form-step']} ${customerStyles['form_step_active']}`}>
                             
+                            <div className={customerStyles['form-step-title']}>
+                                <span>Customer</span>
+                            </div>
 
                             <div className="row">
                                 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="name" className="form-label">Full Name</label>
-                                    <input type="text" ref={customer_name} className="form-control" id="name" placeholder="Customer Name" />
+                                    <div className='row'>
+                                        <label htmlFor="name" className="col-sm-4 col-form-label">Full Name</label>
+                                        <div className="col-sm-8">
+                                            <input type="text" ref={customer_name} className="form-control" id="name" placeholder="Customer Name" />    
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="nationality" className="form-label">Nationality</label>
-                                    <input type="text" ref={customer_nationality} className="form-control" id="nationality" placeholder="Customer Nationality" />
+                                    <div className='row'>
+                                        <label htmlFor="nationality" className="col-sm-4 col-form-label">Nationality</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_nationality} className="form-control" id="nationality" placeholder="Customer Nationality" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="marital-status" className="form-label">Marital Status</label>
-                                    <input type="text" ref={customer_marital_status} className="form-control" id="marital-status" placeholder="Customer Marital Status" />
+                                    <div className='row'>
+                                        <label htmlFor="marital-status" className="col-sm-4 col-form-label">Marital Status</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_marital_status} className="form-control" id="marital-status" placeholder="Customer Marital Status" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="family-name" className="form-label">Family name</label>
-                                    <input type="text" ref={customer_family_name} className="form-control" id="family-name" placeholder="Customer Family name" />
+                                    <div className='row'>
+                                        <label htmlFor="family-name" className="col-sm-4 col-form-label">Family name</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_family_name} className="form-control" id="family-name" placeholder="Customer Family name" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="middle-name" className="form-label">Middle Name</label>
-                                    <input type="text" ref={customer_middle_name} className="form-control" id="middle-name" placeholder="Customer Middle Name" />
+                                    <div className='row'>
+                                        <label htmlFor="middle-name" className="col-sm-4 col-form-label">Middle Name</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_middle_name} className="form-control" id="middle-name" placeholder="Customer Middle Name" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM -->    */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="given-name" className="form-label">Given Name</label>
-                                    <input type="text" ref={customer_given_name} className="form-control" id="given-name" placeholder="Customer Given Name" />
+                                    <div className='row'>
+                                        <label htmlFor="given-name" className="col-sm-4 col-form-label">Given Name</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_given_name} className="form-control" id="given-name" placeholder="Customer Given Name" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="legal-name" className="form-label">Legal Name</label>
-                                    <input type="text" ref={customer_legal_name} className="form-control" id="legal-name" placeholder="Customer Legal Name" />
+                                    <div className='row'>
+                                        <label htmlFor="legal-name" className="col-sm-4 col-form-label">Legal Name</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_legal_name} className="form-control" id="legal-name" placeholder="Customer Legal Name" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="type" className="form-label">Type</label>
-                                    <input type="text" ref={customer_type} className="form-control" id="type" placeholder="Customer Type" />
+                                    <div className='row'>
+                                        <label htmlFor="type" className="col-sm-4 col-form-label">Type</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_type} className="form-control" id="type" placeholder="Customer Type" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="card-number" className="form-label">Card Number</label>
-                                    <input type="text" ref={customer_card_number} className="form-control" id="card-number" placeholder="Customer Card Number" />
+                                    <div className='row'>
+                                        <label htmlFor="card-number" className="col-sm-4 col-form-label">Card Number</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_card_number} className="form-control" id="card-number" placeholder="Customer Card Number" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="issue-date" className="form-label">Issue Date</label>
-                                    <input type="text" ref={customer_issue_date} className="form-control" id="issue-date" placeholder="Customer Issue Date" />
+                                    <div className='row'>
+                                        <label htmlFor="issue-date" className="col-sm-4 col-form-label">Issue Date</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_issue_date} className="form-control" id="issue-date" placeholder="Customer Issue Date" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="valid-for" className="form-label">Valid For</label>
-                                    <input type="text" ref={customer_valid_for} className="form-control" id="valid-for" placeholder="Customer Valid For" />
+                                    <div className='row'>
+                                        <label htmlFor="valid-for" className="col-sm-4 col-form-label">Valid For</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_valid_for} className="form-control" id="valid-for" placeholder="Customer Valid For" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM -->    */}
                                 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="start-date" className="form-label">Start Date</label>
-                                    <input type="text" ref={customer_start_date} className="form-control" id="start-date" placeholder="Customer Start Date" />
+                                    <div className='row'>
+                                        <label htmlFor="start-date" className="col-sm-4 col-form-label">Start Date</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_start_date} className="form-control" id="start-date" placeholder="Customer Start Date" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
@@ -220,21 +271,33 @@ const CreateCustomer = () =>{
 
                         <div className={customerStyles['form-step']}>
 
+                        <div className={customerStyles['form-step-title']}>
+                                <span>Subscription</span>
+                            </div>
+
                             <div className="row">
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="name" className="form-label">Full Name</label>
-                                    <input type="text" className="form-control" id="name" placeholder="Customer Name" />
+                                    <div className='row'>
+                                        <label htmlFor="issue-date" className="col-sm-4 col-form-label">Issue Date</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_issue_date} className="form-control" id="issue-date" placeholder="Customer Issue Date" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="nationality" className="form-label">Nationality</label>
-                                    <input type="text" className="form-control" id="nationality" placeholder="Customer Nationality" />
+                                    <div className='row'>
+                                        <label htmlFor="valid-for" className="col-sm-4 col-form-label">Valid For</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_valid_for} className="form-control" id="valid-for" placeholder="Customer Valid For" />
+                                        </div>
+                                    </div>
                                 </div>
-                                {/* <!-- END OF FORM ITEM --> */}
+                                {/* <!-- END OF FORM ITEM -->    */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className={`col-md-12 mb-3 ${customerStyles['form-buttons']}`}>
@@ -255,19 +318,31 @@ const CreateCustomer = () =>{
 
                         <div className={customerStyles['form-step']}>
 
+                            <div className={customerStyles['form-step-title']}>
+                                <span>Payment</span>
+                            </div>
+
                             <div className="row">
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="name" className="form-label">Full Name</label>
-                                    <input type="text" className="form-control" id="name" placeholder="Customer Name" />
+                                    <div className='row'>
+                                        <label htmlFor="legal-name" className="col-sm-4 col-form-label">Legal Name</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_legal_name} className="form-control" id="legal-name" placeholder="Customer Legal Name" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="nationality" className="form-label">Nationality</label>
-                                    <input type="text" className="form-control" id="nationality" placeholder="Customer Nationality" />
+                                    <div className='row'>
+                                        <label htmlFor="type" className="col-sm-4 col-form-label">Type</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_type} className="form-control" id="type" placeholder="Customer Type" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
@@ -289,20 +364,33 @@ const CreateCustomer = () =>{
                         </div>
                         
                         <div className={customerStyles['form-step']}>
+                            
+                            <div className={customerStyles['form-step-title']}>
+                                <span>Order</span>
+                            </div>
+
                             <div className="row">
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="name" className="form-label">Full Name</label>
-                                    <input type="text" className="form-control" id="name" placeholder="Customer Name" />
+                                    <div className='row'>
+                                        <label htmlFor="family-name" className="col-sm-4 col-form-label">Family name</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_family_name} className="form-control" id="family-name" placeholder="Customer Family name" />
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- END OF FORM ITEM --> */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="nationality" className="form-label">Nationality</label>
-                                    <input type="text" className="form-control" id="nationality" placeholder="Customer Nationality" />
+                                    <div className='row'>
+                                        <label htmlFor="middle-name" className="col-sm-4 col-form-label">Middle Name</label>
+                                        <div className='col-sm-8'>
+                                            <input type="text" ref={customer_middle_name} className="form-control" id="middle-name" placeholder="Customer Middle Name" />
+                                        </div>
+                                    </div>
                                 </div>
-                                {/* <!-- END OF FORM ITEM --> */}
+                                {/* <!-- END OF FORM ITEM -->    */}
 
                                 {/* <!-- START OF FORM ITEM --> */}
                                 <div className={`col-md-12 mb-3 ${customerStyles['form-buttons']}`}>

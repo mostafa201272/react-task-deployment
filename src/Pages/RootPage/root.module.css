@@ -4,6 +4,7 @@
     height: 100vh;
     width: 100%;
     gap: 20px;
+    padding: 25px 10px 30px 10px;
 }
 
 .floating-side-bar{
@@ -16,13 +17,15 @@
 
 .main-page{
     width: calc(100% - 170px);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px;
 }
 
 /* START OF PAGES */
 .pages-container{
     margin-top: 35px;
     width: 100%;
-    height: calc(100vh - 120px);
     overflow-y: scroll;
     overflow-x: hidden;
 }

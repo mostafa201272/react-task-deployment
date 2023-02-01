@@ -2,6 +2,7 @@
 import {Outlet} from 'react-router-dom';
 import SideNavBar from '../../components/SideNavbar/SideNavBar';
 import Header from '../../components/Header/Header'
+import SearchBar from '../../components/search_bar/SearchBar';
 // Styles
 import rootStyles from './root.module.css';
 
@@ -19,13 +20,16 @@ const RootPage = () =>{
             <SideNavBar />
 
             {/* <!-- START OF MAIN --> */}
-            <main className={`${rootStyles['main-page']} container`}>
+            <main className={`${rootStyles['main-page']}`}>
 
                 {/* Load Header */}
                 <Header />
 
-                {/* <!-- START OF PAGES CONTAINER --> */}
-                <div className={rootStyles['pages-container']}>
+                {/* Search Bar */}
+                <SearchBar />
+
+                {/* <!-- START OF PAGES CONTAINER --> */}   
+                <div className={`${rootStyles['pages-container']} container`}>
 
                         {/* Pages */}
                         <Outlet />

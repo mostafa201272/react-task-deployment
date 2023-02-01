@@ -1,0 +1,33 @@
+/* START OF Search Bar  */
+.search-bar-container{
+    position: relative;
+    padding: 20px;
+    background-color: var(--main-color);
+    left: -25px;
+    width: calc(100% + 50px);
+    margin-top: 15px;
+}
+.search-bar{
+    position: relative;
+}
+.search-bar input{
+    height: 100%;
+    color: var(--main-color);
+    border-color: var(--main-color);
+    height: 48px;
+}
+.search-bar input:focus{
+    border-color: var(--main-color);
+}
+.search-bar .search-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: transparent;
+    height: 100%;
+    padding: 10px 20px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* END OF  OF HEADER */

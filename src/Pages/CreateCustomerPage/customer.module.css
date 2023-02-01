@@ -4,8 +4,8 @@
     justify-content: center;
 }
 .create-customer-page .steps-slider .step{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background-color: #fff;
     border-radius: 50%;
     position: relative;
@@ -23,8 +23,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -101%;
-    width: 100%;
+    right: -212%;
+    width: 210%;
     height: 10px;
     background-color: #fff;
     border: 1px solid var(--main-color);
@@ -54,21 +54,33 @@
     font-weight: 600;
 }
 .create-customer-page  .form-step{
-    background-color: #fff;
+    background-color: var(--main-color);
     padding: 20px;
-    margin-top: 50px;
+    padding-top: 35px;
+    margin-top: 100px;
     margin-bottom: 20px ;
     border-radius: 10px;
     box-shadow: 0px 2px 5px 0px #e3e0e0;
+    position: relative;
     display: none;
 }
 .form_step_active{
     display: block !important;
 }
+.create-customer-page  .form-step .form-step-title{
+    position: absolute;
+    top: -40px;
+    left: 35px;
+    background: var(--main-color);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
 .create-customer-page .form-step label{
     font-size: 1.125rem;
     font-weight: 500;
-    color: var(--main-color);
+    color: #fff;
 }
 .create-customer-page  .form-step input{
     border: 1px solid var(--main-color);
@@ -96,15 +108,15 @@
 
 /* START STYLING OF BUTTONS */
 .create-customer-page .form-step .form-buttons button.custom-btn{
-    color: var(--main-color);
+    color: #fff;
     background: transparent;
-    border: 1px solid var(--main-color);
+    border: 1px solid #fff;
     outline: 0
 }
 .create-customer-page .form-step .form-buttons button.custom-btn:hover,
 .create-customer-page .form-step .form-buttons button.custom-btn:active,
 .create-customer-page .form-step .form-buttons button.custom-btn:focus{
-    color: #fff;
-    background: var(--main-color);
+    color: var(--main-color);
+    background: #fff;
 }
 /* END STYLING OF BUTTONS */
