@@ -1,0 +1,42 @@
+/*  START OF SPLASH SCREEN STYLES */
+.splashScreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height:100%;
+    background-color: #f8f8f8;
+}
+.splashScreen .splashScreenMain{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    width:100%;
+}
+.splashScreen .splashScreenMain .splashScreenMainTitle{
+    font-size: 172px;
+    font-weight: 700;
+    color: var(--main-color);
+    display:block
+}
+.splashScreen .splashScreenMain .splashScreenMainQuote{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.splashScreen .splashScreenFooter{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.splashScreen .splashScreenFooter span{
+    font-size: 14px;
+}
+.splashScreen .splashScreenFooter span sup,
+.splashScreen .splashScreenFooter span strong{
+    color:var(--main-color);
+}
+/*  END OF SPLASH SCREEN STYLES */

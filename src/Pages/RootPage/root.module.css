@@ -1,0 +1,29 @@
+/* START OF SITE CONTAINER */
+.site-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    gap: 20px;
+}
+
+.floating-side-bar{
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-page{
+    width: calc(100% - 170px);
+}
+
+/* START OF PAGES */
+.pages-container{
+    margin-top: 35px;
+    width: 100%;
+    height: calc(100vh - 120px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* END OF PAGES */
