@@ -10,7 +10,7 @@ const Splash = () => {
         setTimeout(() => {
             const splashScreen = document.getElementById("splash-screen");
             splashScreen.style.display = 'none';
-          }, 300);
+          }, 3000);
     }, [])
 
     return (
