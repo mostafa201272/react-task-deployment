@@ -112,7 +112,7 @@ const CreateCustomer = () =>{
                     </div>
                 </div>
 
-                <div className="form">
+                <div className={customerStyles['form']}>
                     <form>
 
 

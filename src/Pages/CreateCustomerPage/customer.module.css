@@ -53,6 +53,9 @@
 .create-customer-page .steps-slider .step.active .step-title{
     font-weight: 600;
 }
+.create-customer-page .form{
+    /* overflow: hidden; */
+}
 .create-customer-page  .form-step{
     background-color: var(--main-color);
     padding: 20px;
@@ -120,3 +123,21 @@
     background: #fff;
 }
 /* END STYLING OF BUTTONS */
+
+/* Media Screen */
+@media (max-width: 992px) {
+    .create-customer-page .steps-slider .step{
+        margin-right: 25px;
+        font-size: 16px;
+    }
+    .create-customer-page .steps-slider .step::after{
+        right: -100%;
+        width: 100%;
+    }
+    .create-customer-page .steps-slider .step .step-title{
+        font-size: 0.75rem;
+    }
+    .create-customer-page .steps-slider .step:last-child{
+        margin-right: 0;
+    }
+}

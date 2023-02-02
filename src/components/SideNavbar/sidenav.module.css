@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 .floating-side-bar .logo{
     width: 100px;
@@ -34,15 +35,16 @@
     border: 1px solid var(--main-color);
     border-radius: 5px;
     overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px 0px #e3e0e0;
+    /* background-color: #fff; */
+    /* box-shadow: 0px 2px 5px 0px #e3e0e0; */
 }
 .pages-icons .page-icon svg,
 .logout-icon a svg{
     display: block;
     width: 50px;
     height: 50px;
-    color: var(--main-color);
+    /* color: var(--main-color); */
+    color: #fff;
 }
 
 .pages-icons .page-icon:hover,
@@ -60,3 +62,40 @@
     stroke: #fff;
 }
 /* END OF SITE CONTAINER */
+
+/* Media Screens */
+@media (max-width: 992px) {
+    .floating-side-bar{
+        position: fixed;
+        top: 0;
+        left: -200px;
+        background-color: #fff;
+        z-index: 2;
+        width: 200px;
+        height: 100vh;
+        transition: all 0.4s ease-in-out;
+    }
+    .active-side-bar{
+        left: 0 !important;
+    }
+    .floating-side-bar-overlay::before{
+        content: '';
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: #0000004d;
+    }
+    .floating-side-bar-overlay.activer-overlay::before{
+        display: block;
+    }
+
+    .pages-icons .page-icon svg,
+    .logout-icon a svg{
+        color: var(--main-color);
+    }
+}
+/* Media Screens */
